@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central Ciudad Verde</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="JS/bootstrap.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JavaScript de Bootstrap (debe ir antes del cierre del body) -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+    <header class="py-3" id="header">
+      <div class="container">
+        <h1 class="text-center mb-4 fw-bold" style="font-size: 2.5rem; color: #d4d4d4;">Biblioteca La Hoja Verde</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link px-3">Inicio</a></li>
+              <li class="nav-item"><a href="Encargar_libro.html" class="nav-link px-3">Encargos</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-3">Catálogo</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <main id="main">
+      <!-- Quienes somos -->
+      <div class="row p-5">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <img src="https://th.bing.com/th/id/OIG1.ncb_yzgx2Y0PETAqVxsH?pid=ImgGn" alt="pregunta" class="imagen1">
+        </div>
+        <div class="col-lg-4">
+          <h2 class="fw-normal">¿Quiénes somos?</h2>
+          <p class="text-white">La hoja verde es una biblioteca innovadora. Su misión es convertirse en un epicentro de aprendizaje, cultura e intercambio de ideas, sirviendo tanto a estudiantes, investigadores, y lectores recreativos, como a profesionales que buscan acceso a información relevante y actualizada.</p>
+        </div>
+      </div>
+
+      <!-- Sección de Libros Destacados -->
+      <div class="container-fluid px-0">
+        <h1 id="libros_dest_titulos" class="mb-0 py-4 text-center">Libros Destacados</h1>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- Contenido del carrusel -->
+          <div class="carousel-inner">
+            <!-- Primer libro -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row align-items-center p-4">
+                  <div class="col-md-4 text-center">
+                    <img src="https://librosobrelibro.com/wp-content/uploads/2022/06/guerra-y-paz-1.jpg" class="img-fluid rounded" alt="Amor y Guerra" style="max-height: 300px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="carousel-caption position-static text-start p-3">
+                      <h2 class="text-white">Guerra y Paz</h2>
+                      <p class="text-white">Paz y Guerra es una novela épica que explora los profundos contrastes entre los momentos de tranquilidad y conflicto en la vida humana. A través de las experiencias de múltiples personajes en tiempos de paz y guerra, el libro examina cómo las circunstancias extremas revelan tanto lo mejor como lo peor de las personas.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Segundo libro -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row align-items-center p-4">
+                  <div class="col-md-4 text-center">
+                    <img src="https://i.pinimg.com/736x/c0/78/e9/c078e958851b901709d17ea4cf30a167.jpg" class="img-fluid rounded" alt="The Main Title" style="max-height: 300px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="carousel-caption position-static text-start p-3">
+                      <h2 class="text-white">The Main Title</h2>
+                      <p class="text-white">The Mains Title es una emocionante novela de ciencia ficción que sigue la vida de Eileen Stark, una joven programadora en un mundo donde las fronteras entre lo digital y lo real se han desvanecido.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tercer libro -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row align-items-center p-4">
+                  <div class="col-md-4 text-center">
+                    <img src="https://images.cdn3.buscalibre.com/fit-in/360x360/1b/73/1b7324283dfa257ad228b5e453cfb70b.jpg"" class="img-fluid rounded" alt="Cuenta la historia" style="max-height: 300px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="carousel-caption position-static text-start p-3">
+                      <h2 class="text-white">Cuenta tu historia</h2>
+                      <p class="text-white">"Cuenta la Historia" es una cautivadora novela que explora el poder de las historias y cómo estas pueden influir en nuestras vidas. La trama sigue a Sofía, una joven escritora que descubre un misterioso libro antiguo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Membresia -->
+      <div class="row p-5 d-flex align-items-end" style="margin: 0px;padding: 30px;">
+        <!-- columna 1 -->
+        <div class="col-lg-6" style="display: flex;flex-direction: column;align-items: center;">
+          <img src="https://th.bing.com/th/id/OIG2.IGCzGPu1eMJHYcKVLIIM?pid=ImgGn" alt="membresia" class="imagen1">
+          <h2 class="fw-normal">Planes de membresía</h2>
+          <p class="text-white">
+            La Membresía Hoja Verde ofrece a los usuarios acceso exclusivo a una amplia 
+            gama de recursos y beneficios. Con esta membresía, los socios disfrutan de 
+            préstamos extendidos, acceso prioritario a salas 
+            de estudio, descuentos en talleres y eventos
+          </p>
+          <a href="membresía.html">
+            <button class="boton">
+              Obtener membresía»
+            </button>
+          </a>
+        </div>
+        <!-- columna 2 -->
+        <div class="col-lg-6" style="display: flex;flex-direction: column;align-items: center;">
+          <div class="row">
+
+            <div class="col-lg-6 col-md-6 mb-4 d-flex align-items-end">
+              <div style="background-color: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; height: 100%; color: white;">
+                <h3 style="text-align: center;">Plan Básico</h3>
+                <ul style="list-style: none; padding: 0;">
+                  <li style="margin: 10px 0;">✓ Préstamo de 2 libros</li>
+                  <li style="margin: 10px 0;">✓ 10 horas mensuales en sala de estudio</li>
+                </ul>
+                <p style="text-align: center; font-size: 1.5em; margin-top: 20px;">$1500/mes</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div style="background-color: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; height: 100%; color: white;">
+                <h3 style="text-align: center;">Plan Premium</h3>
+                <ul style="list-style: none; padding: 0;">
+                  <li style="margin: 10px 0;">✓ Préstamo de 5 libros</li>
+                  <li style="margin: 10px 0;">✓ Horas ilimitadas en sala de estudio</li>
+                  <li style="margin: 10px 0;">✓ 50% descuento en eventos</li>
+                </ul>
+                <p style="text-align: center; font-size: 1.5em; margin-top: 20px;">$2500/mes</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sucursales -->
+      <div class="row py-5">
+        <!-- columna 1 -->
+        <div class="col-lg d-flex justify-content-center align-items-center text-center">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg mb-4">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.4482572927728!2d-68.8375878235339!3d-32.89057197432991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091ed2dd83f7%3A0xf41c7726d8beb561!2sGral.%20Espejo%20656%2C%20M5500%20Mendoza!5e0!3m2!1ses!2sar!4v1695667153371!5m2!1ses!2sar" 
+                  class="location-map"
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- columna 2 -->
+        <div class="col-lg-6 d-flex justify-content-center align-items-center text-center">
+          <div class="row">
+            <div class="d-flex justify-content-center">
+              <img src="https://th.bing.com/th/id/OIG1.gqOdJ2xNdnhAD35jxBl8?pid=ImgGn" alt="locales" class="imagen1">
+            </div>
+            <h2 class="fw-normal">Encontranos acá</h2>
+            <div style="color: white;">
+              <div style="margin-bottom: 20px;">
+                <h4>Centro Histórico</h4>
+                <p>📍 Calle Gral. Espejo 656</p>
+                <p>📞 261-4369323</p>
+                <p>🕒 Lun a Vie: 8:00 - 20:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Metodos de pago -->
+      <h1 id="titulos_pagos" class="mb-0 py-4 text-center">
+        Métodos de Pago Aceptados
+      </h1>
+      
+      <div id="metodos-pago" class="p-5 mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+              <img src="https://th.bing.com/th/id/OIG2.KVa4ARUi2nLF8wpbWCw6?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Tarjetas" class="imagen1" />
+              <h3 style="color: white; margin-top: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                Tarjetas
+              </h3>
+              <p style="color: white; text-align: center; font-family: sans-serif;">
+                Débito, crédito y prepagas
+              </p>
+            </div>
+            
+            <div class="col-lg-4" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+              <img src="https://th.bing.com/th/id/OIG1.IhkHZPUslUZMDzh9.Bmy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Efectivo" class="imagen1" />
+              <h3 style="color: white; margin-top: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                Efectivo
+              </h3>
+              <p style="color: white; text-align: center; font-family: sans-serif;">
+                En nuestra sucursal
+              </p>
+            </div>
+            
+            <div class="col-lg-4" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+              <img src="https://th.bing.com/th/id/OIG1.9kHRixHgnwX1v3iO0EPL?pid=ImgGn" alt="Billeteras" class="imagen1" />
+              <h3 style="color: white; margin-top: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                Billeteras Digitales
+              </h3>
+              <p style="color: white; text-align: center; font-family: sans-serif;">
+                MercadoPago y Ualá
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <i class="" style="font-size: 30px;"></i>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 La hoja Verde, Inc</span>
+        </div>
+
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com" target="_blank"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://instagram.com" target="_blank"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://facebook.com" target="_blank"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- SCRIPT DE BOOSTRAP -->
+    <script src="JS/bootstrap.js"></script>
+
+</body>
+</html>
